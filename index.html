@@ -9,18 +9,39 @@
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
   <style>
     body{
-      margin: 0;
+      margin: 0px;
       font-family: Times New Roman, sans-serif;
+	  overflow: hidden;
+	  height: 100%;
     }
 
-    iframe {
-      width: 100%;
-      height: 100%;
-    }
+    .iframe-container {
+		width: 100vw;
+		height: 950px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+	
+	.textbox {
+		width: 100vw;
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 26px;
+	}
   </style>
   </head>
   
   <body>
-    <iframe src="Akira-Evanson-Resume3.pdf" title="PDF Viewer"></iframe>
+  
+	<section class="textbox"> <b>Akira Evanson's Resume</b> </section>
+		
+	<div class="iframe-container">
+		<iframe src="C:\Users\student\Downloads\Akira-Evanson-Resume3(1).pdf" width="80%" height="850" style= "border: 5px solid black;" title="PDF Viewer"></iframe>
+	</div>
   </body>
+
 </html>
