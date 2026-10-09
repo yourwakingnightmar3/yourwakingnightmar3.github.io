@@ -27,14 +27,16 @@
     }
 
     .iframe-container {
-		width: 60vw;
-		max-width: 100vw;
-		height: 100vh;
-		margin: 0 auto;
-
+		width: 100vw;
+		height: 70vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+	
+	.iframe-window {
+		width: 40%;
+		height: 100%;
 		border: 5px solid black;
 		box-sizing: border-box;
 	}
@@ -104,8 +106,10 @@
 	<div class="textbox"> <h3 class="gradient-text-custom">Akira Evanson's Resume</h3> </div>
 		
 	<div class="iframe-container">
-		<iframe name="pdf" src="Akira-Evanson-Resume3(1).pdf#view=FitH" type="application/PDF" title="PDF Viewer">
-			<a target="pdf" href="Akira-Evanson-Resume3(1).pdf">Load PDF</a>
+		<iframe class="iframe-window" src="Akira-Evanson-Resume3(1).pdf#view=FitH" type="application/PDF" title="PDF Viewer">
+			<p>Your browser doesn't support inline PDFs. 
+     <a href="Akira-Evanson-Resume3(1).pdf">Click here to download instead.</a>
+			</p>
 		</iframe>
 	</div>
   </body>
