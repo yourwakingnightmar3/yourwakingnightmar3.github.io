@@ -9,38 +9,102 @@
     <link rel="shortcut icon" type="image/x-icon" href="FileIcon.png">
   <style>
     body{
-      margin: 0px;
-      font-family: Times New Roman, sans-serif;
 	  overflow: hidden;
-	  height: 100%;
+	  margin: 0;
+	  padding: 0;
+	  min-height: 100vh;
+	  
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	  
+	  background-image: url("gif-speed.gif");
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center;
+	  background-attachment: fixed;
     }
 
     .iframe-container {
 		width: 100vw;
-		height: 950px;
+		height: 70vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.iframe-window {
+		width: 40%;
+		height: 100%;
+		border: 5px solid black;
+		box-sizing: border-box;
+	}
+	
+	.textbox {
+		width: 80vw;
+		max-width: 1200px;
+		height: 12vh; 
+		min-height: 80px;
+		margin: 2vh 0;
+		
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		
+		font-family: 'Boldo', sans-serif;
+		font-size: 40px;
+		color: #FFFFFF;
+		
+		padding: 20px;
+		border-radius: 18px;
+		background-color: rgba(0, 0, 0, 0.2);		
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
 	}
 	
-	.textbox {
-		width: 100vw;
-		margin-top: 30px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 26px;
+	@font-face {
+		font-family: 'Boldo';
+		src: url("BoldodemoRegular-Wp6wE.otf") format("opentype");
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
 	}
+	
+.gradient-text-custom {
+		/* Font styling */
+		font-family: 'Boldo', sans-serif;
+		font-weight: bold;
+
+		/* Gradient effect */
+		background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 25%, #667eea 75%, #89f7fe 100%);
+		background-size: 200% auto;
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+		color: transparent;
+		
+		animation: shiftGradient 4s linear infinite;
+		display: inline-block;
+}
+
+@keyframes shiftGradient {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
   </style>
   </head>
   
   <body>
   
-	<section class="textbox"> <b>Akira Evanson's Resume</b> </section>
+	<section class="textbox"> <h3 class="gradient-text-custom">Akira Evanson's Resume</h3> </section>
 		
 	<div class="iframe-container">
-		<iframe src="Akira-Evanson-Resume3(1).pdf" width="80%" height="850" style= "border: 5px solid black;" title="PDF Viewer"></iframe>
+		<iframe class="iframe-window" src="Akira-Evanson-Resume3(1).pdf#view=FitH" title="PDF Viewer"></iframe>
 	</div>
   </body>
 
