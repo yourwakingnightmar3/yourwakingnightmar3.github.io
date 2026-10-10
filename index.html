@@ -108,33 +108,12 @@
 		
 	<div class="iframe-container">
 		
-		<iframe class="iframe-window" src="Akira-Evanson-Resume3(1).pdf"#view=FitH type="application/pdf" title="PDF Viewer">
+		<iframe class="iframe-window" src="https://github.com/yourwakingnightmar3/yourwakingnightmar3.github.io/blob/main/Akira-Evanson-Resume3(1).pdf"#view=FitH type="application/pdf" title="PDF Viewer">
 			<p>Your browser doesn't support inline PDFs. 
      			<a href="Akira-Evanson-Resume3(1).pdf">Click here to download the PDF file.</a>
 			</p>
 		</iframe>
 	</div>
-
-	<script>
-    	document.addEventListener("DOMContentLoaded", function() {
-        	const container = document.getElementsByClassName("iframe-container");
-        	const pdfUrl = "Akira-Evanson-Resume3(1).pdf";
-        
-        	// Encode your PDF URL so Google Docs Viewer can read it properly
-        	const googleDocsViewerUrl = `https://drive.google.com/file/d/1tT48d-SGmIU8p6TZM19SrTYDzBebEjOo/view`;
-
-        	// 1. Check if the device is a mobile browser or explicitly lacks PDF support
-        	const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
-        	const supportsPdf = navigator.mimeTypes["application/pdf"] !== undefined || 
-                            	(navigator.userAgentData && navigator.userAgentData.mobile === false);
-
-        	// 2. If it's a mobile device (like Android Chrome) or PDFs aren't natively supported
-	     	if (isMobile || !supportsPdf) {
-    	        // Swap out the <object> entirely for the Google 	Docs iframe
-            	container.innerHTML = `<iframe src="${googleDocsViewerUrl}" class="iframe-window"></iframe>`;
-        	}
-    	});
-	</script>
 
   </body>
 
