@@ -12,8 +12,7 @@
 	  overflow: hidden;
 	  margin: 0;
 	  padding: 0;
-	  min-height: 50vh;
-	  max-height: 100vh;
+	  min-height: 100vh;
 	  
 	  display: flex;
 	  flex-direction: column;
@@ -29,7 +28,8 @@
 
     .iframe-container {
 		width: 100vw;
-		height: 70vh;
+		min-height: 50vh;
+		max-height: 70vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -37,6 +37,7 @@
 	
 	.iframe-window {
 		width: 60%;
+		height: 70vh;
 		border: 5px solid black;
 		box-sizing: border-box;
 	}
