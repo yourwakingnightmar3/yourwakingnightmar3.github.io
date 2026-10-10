@@ -108,11 +108,11 @@
 		
 	<div class="iframe-container">
 		
-		<iframe class="iframe-window" src="Akira-Evanson-Resume3(1).pdf"#view=FitH type="application/pdf" title="PDF Viewer">
+		<object class="iframe-window" data="Akira-Evanson-Resume3(1).pdf"#view=FitH type="application/pdf" title="PDF Viewer">
 			<p>Your browser doesn't support inline PDFs. 
      			<a href="Akira-Evanson-Resume3(1).pdf">Click here to download the PDF file.</a>
 			</p>
-		</iframe>
+		</object>
 	</div>
 
 	<script>
@@ -131,7 +131,7 @@
         	// 2. If it's a mobile device (like Android Chrome) or PDFs aren't natively supported
 	     	if (isMobile || !supportsPdf) {
     	        // Swap out the <object> entirely for the Google 	Docs iframe
-            	container.innerHTML = `<iframe src="${googleDocsViewerUrl}" width="100%" height="100%" style="border: none;"></iframe>`;
+            	container.innerHTML = `<iframe src="${googleDocsViewerUrl}" class="iframe-window"></iframe>`;
         	}
     	});
 	</script>
