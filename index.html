@@ -131,7 +131,7 @@
         	// 2. If it's a mobile device (like Android Chrome) or PDFs aren't natively supported
 	     	if (isMobile || !supportsPdf) {
     	        // Swap out the <object> entirely for the Google 	Docs iframe
-            	container.innerHTML = `<object src="${googleDocsViewerUrl}" class="iframe-window"></object>`;
+            	container.innerHTML = `<iframe src="${googleDocsViewerUrl}" class="iframe-window"></iframe>`;
         	}
     	});
 	</script>
