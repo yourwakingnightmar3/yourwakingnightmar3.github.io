@@ -101,6 +101,13 @@
   			}
 		}
 	</style>
+
+	<script>
+		const pdfUrl = 'https://github.com/yourwakingnightmar3/yourwakingnightmar3.github.io/blob/17277afac7498ee0e3545c634577a1d95ba54bbc/Akira-Evanson-Resume3(1).pdf?raw=true';
+		const googleViewer = `https://docs.google.com/gview?url=${encodeURIComponent(pdfUrl)}&embedded=true`;
+		
+		document.getElementById('pdfView').src = googleViewer;
+	</script>
   </head>
   
   <body>
@@ -108,7 +115,7 @@
 	<div class="textbox"> <h3 class="gradient-text-custom">Akira Evanson's Resume</h3> </div>
 		
 	<div class="iframe-container">
-		<iframe class="iframe-window" type="application/pdf" title="PDF Viewer" src={`https://docs.google.com/gview?url=${encodeURIComponent('http://docs.google.com/gview?url=https://github.com/yourwakingnightmar3/yourwakingnightmar3.github.io/blob/17277afac7498ee0e3545c634577a1d95ba54bbc/Akira-Evanson-Resume3(1).pdf')}`}>
+		<iframe class="iframe-window" id="pdfView" type="application/pdf" title="PDF Viewer">
 			<p>Your browser doesn't support inline PDFs. 
      			<a href="Akira-Evanson-Resume3(1).pdf">Click here to download the PDF file.</a>
 			</p>
